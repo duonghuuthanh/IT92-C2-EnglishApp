@@ -16,7 +16,7 @@ GridPane {
 }
 
 Label {
-    -fx-text-fill: darkblue;
+    -fx-text-fill: blue;
 }
 
 Button {
