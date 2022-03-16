@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dht.c2englishapp.QuestionController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EnglishApp" />
+      <TextField />
+      <ComboBox fx:id="cbCategories" prefWidth="150.0" />
+      <HBox prefHeight="29.0" prefWidth="600.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="A" />
+            <TextField />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="92.0" prefHeight="29.0" prefWidth="600.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="B" />
+            <TextField />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="124.0" prefHeight="29.0" prefWidth="600.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="C" />
+            <TextField />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="155.0" prefHeight="29.0" prefWidth="600.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="D" />
+            <TextField />
+         </children>
+      </HBox>
+      <TextField fx:id="txtKeyword" />
+      <TableView fx:id="tbQuestions" prefHeight="279.0" prefWidth="600.0" />
+   </children>
+</VBox>
