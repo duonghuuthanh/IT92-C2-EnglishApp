@@ -8,34 +8,42 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dht.c2englishapp.QuestionController">
    <children>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EnglishApp" />
-      <TextField />
+      <TextField fx:id="txtContent" />
       <ComboBox fx:id="cbCategories" prefWidth="150.0" />
       <HBox prefHeight="29.0" prefWidth="600.0">
          <children>
-            <RadioButton mnemonicParsing="false" text="A" />
-            <TextField />
+            <RadioButton fx:id="rdoA" mnemonicParsing="false" text="A">
+               <toggleGroup>
+                  <ToggleGroup fx:id="choice" />
+               </toggleGroup></RadioButton>
+            <TextField fx:id="txtA" />
          </children>
       </HBox>
       <HBox layoutX="10.0" layoutY="92.0" prefHeight="29.0" prefWidth="600.0">
          <children>
-            <RadioButton mnemonicParsing="false" text="B" />
-            <TextField />
+            <RadioButton fx:id="rdoB" mnemonicParsing="false" text="B" toggleGroup="$choice" />
+            <TextField fx:id="txtB" />
          </children>
       </HBox>
       <HBox layoutX="10.0" layoutY="124.0" prefHeight="29.0" prefWidth="600.0">
          <children>
-            <RadioButton mnemonicParsing="false" text="C" />
-            <TextField />
+            <RadioButton fx:id="rdoC" mnemonicParsing="false" text="C" toggleGroup="$choice" />
+            <TextField fx:id="txtC" />
          </children>
       </HBox>
       <HBox layoutX="10.0" layoutY="155.0" prefHeight="29.0" prefWidth="600.0">
          <children>
-            <RadioButton mnemonicParsing="false" text="D" />
-            <TextField />
+            <RadioButton fx:id="rdoD" mnemonicParsing="false" text="D" toggleGroup="$choice" />
+            <TextField fx:id="txtD" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" onAction="#addQuestion" text="Add question" />
          </children>
       </HBox>
       <TextField fx:id="txtKeyword" />
